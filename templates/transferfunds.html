@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Bank</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/bootstrap/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/fonts/font-awesome.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/fonts/ionicons.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/fonts/line-awesome.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/Bootstrap-4---Payment-Form.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/Bootstrap-DataTables.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/Carousel-Hero.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/Contact-Form-Clean.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/Data-Table-1.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/Data-Table.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/Dynamic-Table.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/gradient-navbar-1.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/gradient-navbar.css') }}">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.15/css/dataTables.bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/Navbar---Apple-1.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/Navbar---Apple.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/Pretty-Footer.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/Profile-Edit-Form-1.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/Profile-Edit-Form.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/Registration-Form-with-Photo.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/sidebar-1.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/Sidebar-Menu-1.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/Sidebar-Menu.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/sidebar.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/untitled.css') }}">
+
+    <script src="{{ url_for('static', filename='assets/js/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/bootstrap/js/bootstrap.min.js') }}"></script>
+    <script src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.15/js/dataTables.bootstrap.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
+    <script src="{{ url_for('static', filename='assets/js/Bootstrap-DataTables.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/js/Bootstrap-4---Payment-Form.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/js/Dynamic-Table.js') }}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/pikaday.min.js"></script>
+    <script src="{{ url_for('static', filename='assets/js/Navbar---Apple.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/js/Profile-Edit-Form.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/js/Sidebar-Menu.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/js/theme.js') }}"></script>
+
+    <script src="{{ url_for('static', filename='js/transferFunds.js') }}"></script>
+</head>
+
+<body style="background-image: url(&quot;static/assets/img/nature/image6.jpg&quot;);background-repeat: no-repeat;background-size: cover;">
+    <nav class="navbar navbar-dark navbar-expand-md fixed-top bg-dark navbar--apple">
+        <div class="container"><button data-toggle="collapse" class="navbar-toggler" data-target="#menu"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"><i class="la la-navicon"></i></span></button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="nav navbar-nav flex-grow-1 justify-content-between">
+                    <li class="nav-item d-none d-xs-block d-md-block" role="presentation"><a class="nav-link" href="/profile"><i class="fa fa-bitcoin apple-logo"></i></a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" id="home_link" href="/profile">Home</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" id="transfer_funds" href="/transferFunds">Transfer Funds</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" id="transactions" href="/transactions">Transactions</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" id="contact_us_link" href="/contactUs">Contact us</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" id="logout_link" href="/logout">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="main">
+        <div id="profile_div">
+            <div class="container profile profile-view" id="profile">
+                <div class="row">
+                    <div class="col-md-12 alert-col relative">
+                        <div class="alert alert-info absolue center" role="alert"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button><span>Profile save with success</span></div>
+                    </div>
+                </div>
+                <form>
+                    <div class="form-row profile-row" id="profile_row" style="background-color: rgba(255,255,255,0.39);">
+                        <div class="col-md-8 col-lg-12 col-xl-10 offset-lg-0 offset-xl-1">
+                            <hr>
+                            <h1>Transfer Funds</h1>
+                            <hr>
+                            <div class="form-group"><label>Beneficiary's Account Number</label><input class="form-control" type="text" id="payee_acn" autocomplete="off" required name="payee_acn" autofocus></div>
+                            <div class="form-group"><label>Amount</label><input class="form-control" type="text" id="amt" autocomplete="off" required name="amt"></div>
+                            <div class="form-row">
+                                <div class="col-sm-12 col-md-6 col-lg-7">
+                                    <div class="form-group"><label>OTP</label><input class="form-control" type="password" id="otp" name="otp" autocomplete="off"></div><button class="btn btn-danger form-btn" id="req_otp" type="button">Request OTP</button></div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-lg-7 content-right"><button class="btn btn-primary form-btn" id="pay_btn" type="submit">Pay</button></div>
+                        <div class="col-lg-12">
+                            <hr>
+                            <div id="successAlert" class="alert alert-success" role="alert" style="text-align:center;width:310px;margin-left: 360px;display:none;"></div>
+                            <div id="errorAlert" class="alert alert-danger" role="alert" style="text-align:center;width:310px;margin-left: 360px;display:none;"></div>
+                            <hr>
+                        </div>
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer style="margin-top: -1px;">
+        <div class="row">
+            <div class="col-sm-6 col-md-4 footer-navigation">
+                <h3><a href="#">my<span>Bank</span></a></h3>
+                <p class="company-name">myBank © 2020</p>
+            </div>
+            <div class="col-sm-6 col-md-4 footer-contacts">
+                <div><span class="fa fa-map-marker footer-contacts-icon"> </span>
+                    <p><span class="new-line-span">PES University</span>Bengaluru, Karnataka</p>
+                </div>
+                <div><i class="fa fa-phone footer-contacts-icon"></i>
+                    <p class="footer-center-info email text-left"> +91-##########</p>
+                </div>
+                <div><i class="fa fa-envelope footer-contacts-icon"></i>
+                    <p> <a href="#" target="_blank">myBank@gmail.com</a></p>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="col-md-4 footer-about">
+                <h4>About the project</h4>
+                <p>6th Semester Project. </p>
+                <div class="social-links social-icons"><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-linkedin"></i></a><a href="https://github.com/dattheshshenoy/Web_Tech_II_Proj"><i class="fa fa-github"></i></a></div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

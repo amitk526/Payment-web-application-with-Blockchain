@@ -1,0 +1,94 @@
+#contact_us_container {
+  background-color: rgba(255,255,255,0.77);
+}
+
+#contact_us_in_container {
+  background-color: rgba(255,255,255);
+}
+
+#login_container {
+  background-color: rgba(255,255,255,0.77);
+}
+
+#sidebar_div {
+  width: 270px;
+}
+
+#sidecol {
+}
+
+#table_div {
+  width: 1000px;
+  height: 0px;
+  margin-left: 280px;
+}
+
+#page_div {
+  float: left;
+  clear: none;
+}
+
+#page_div {
+  float: left;
+  clear: none;
+}
+
+#main {
+  margin: 0 auto;
+  height: 100%;
+}
+
+#sidebar_div {
+  float: left;
+}
+
+#form_div {
+  background-size: auto;
+  width: 900px;
+}
+
+#profile_container {
+  background-color: #ffffff;
+  width: 900px;
+}
+
+#profile_edit_div {
+  background-color: #fcfbfb;
+}
+
+#profile_row {
+}
+
+#sidebar_div {
+  height: 100%;
+}
+
+.card-body.p-5.bg-white.rounded {
+  background-color: rgba(255,255,255,0.39);
+}
+
+.card.rounded.shadow.border-0 {
+  background-color: rgba(255,255,255,0.39);
+}
+
+#table_div {
+  height: 100%;
+}
+
+.form-container {
+  width: 1000px;
+}
+
+#block {
+  height: 460px;
+}
+
+.contact-clean {
+  height: 500px;
+  width: 1620px;
+}
+
+form {
+  width: 1000px;
+}
+
